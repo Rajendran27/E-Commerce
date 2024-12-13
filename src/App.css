@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#hero {
+  background-image: url(../src/assets/images/wallpaper.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+#hero h2{
+  font-size: 70px;
+
+}
+#hero h1 {
+  color: #088178;
+  font-size: 70px;
+
+}
+#hero button {
+  background-color: transparent;
+  background-image: '../src/assets/images/button.png';
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #088178;
+  background-color: gray;
+  border-radius: 50px;
+  padding: 14px 65px 14px 65px;
+}
+
+
+/* Center the form on the page */
+form {
+  max-width: 400px; /* Maximum width of the form */
+  margin: 50px auto; /* Center the form vertically and horizontally */
+  padding: 20px; /* Add padding inside the form */
+  border: 1px solid #ddd; /* Light border around the form */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+}
+
+/* Form heading */
+form h3 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 1.8rem; /* Larger font size for the heading */
+  color: #333; /* Dark text color */
+  font-weight: bold; /* Bold text */
+}
+
+/* Labels */
+form label {
+  font-weight: 600; /* Slightly bold labels */
+  color: #555; /* Muted text color */
+  margin-bottom: 5px; /* Space below the label */
+  display: block; /* Ensure label is above the input */
+}
+
+/* Input fields */
+form input {
+  display: block; /* Block layout for full width */
+  width: 100%; /* Full width input */
+  padding: 10px; /* Padding inside the input */
+  margin-bottom: 15px; /* Space below the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Standard font size */
+}
+
+/* Input focus effect */
+form input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Submit button */
+form .btn {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #007bff; /* Bootstrap primary blue */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  font-size: 1rem; /* Standard font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+form .btn:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
+
+/* Forgot password and register link */
+form .forgot-password {
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Space above the text */
+  color: #007bff; /* Link color */
+  font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Link hover effect */
+form .forgot-password a {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+form .forgot-password a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  form {
+    padding: 15px; /* Reduce padding */
+  }
+
+  form h3 {
+    font-size: 1.5rem; /* Smaller font size for heading */
+  }
+}
+
+
+/* Center-aligned search bar with adjusted layout */
+.mx-auto {
+  width: 30%; /* Width of the search bar container */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align vertically */
+}
+
+/* Search Bar Styling */
+.mx-auto .form-control {
+  border-radius: 20px; /* Rounded corners for search bar */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px; /* Padding for the input */
+  box-shadow: none; /* Remove default shadow */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.mx-auto .form-control:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue glow */
+  outline: none; /* Remove default outline */
+}
+
+/* Flexbox for Cart and Profile */
+.d-flex.align-items-between {
+  display: flex; /* Flex layout for alignment */
+  align-items: center; /* Vertically align items */
+  gap: 20px; /* Space between Cart and Profile dropdown */
+  margin-left: -10px; /* Move closer to the search bar */
+}
+
+/* Cart Link Styling */
+.d-flex.align-items-between .nav-link {
+  font-size: 1rem; /* Standard font size */
+  font-weight: bold; /* Bold text for visibility */
+  color: #555; /* Muted text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.d-flex.align-items-between .nav-link:hover {
+  color: #007bff; /* Blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Profile Dropdown */
+#navbarScrollingDropdown {
+  font-size: 1rem; /* Standard font size */
+  color: #555; /* Muted text color */
+}
+
+#navbarScrollingDropdown .dropdown-item {
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #333; /* Darker text for dropdown items */
+}
+
+#navbarScrollingDropdown .dropdown-item:hover {
+  background-color: #f8f9fa; /* Light gray on hover */
+  color: #007bff; /* Blue text on hover */
+}
+
+/* Divider in Profile Dropdown */
+#navbarScrollingDropdown .dropdown-divider {
+  border-top: 1px solid #ddd; /* Subtle gray divider */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .mx-auto {
+    width: 60%; /* Expand search bar for smaller screens */
+    margin-bottom: 10px; /* Add spacing below */
+  }
+
+  .d-flex.align-items-between {
+    flex-direction: column; /* Stack Cart and Profile vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-right: 0; /* Reset left margin */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .d-flex.align-items-between .nav-link {
+    font-size: 0.9rem; /* Slightly smaller font */
+  }
+
+  #navbarScrollingDropdown .dropdown-item {
+    font-size: 0.85rem; /* Slightly smaller dropdown items */
+  }
+}
+
+
